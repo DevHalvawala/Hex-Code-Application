@@ -10,4 +10,7 @@ document.querySelector("#submit").addEventListener("click", () => {
         random_index = Math.floor(Math.random() * hex_numbers.length);
         hexcode_2 += hex_numbers[random_index];
     }
+    document.body.style.background = `linear-gradient(to right,#${hexcode_1},#${hexcode_2})`;
+    document.querySelector("#hexcode_1").textContent = hexcode_1;
+    document.querySelector("#hexcode_2").textContent = hexcode_2;
 });
